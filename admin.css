@@ -1,0 +1,24 @@
+img {
+    width: 100px;
+}
+table,
+tr {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+tr,
+th,
+td {
+    border: 1px solid gray;
+}
+article {
+    display: grid;
+    grid-template-columns:  4fr ;
+    padding: 15px;
+    gap: 10px;
+}
+#leirasa{
+    width: 500px;
+   
+}

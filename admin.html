@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="  szerkezet.css" />
+    <link rel="stylesheet" href="admin.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="ajax.js"></script>
+    <script src="termek.js"></script>
+
+    <script src="admin.js"></script>
+    <title>Webáruház 1.0</title>
+</head>
+
+<body>
+    <main>
+        <header></header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="fizetes.html">Fizetés</a></li>
+                <li></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+        <article>
+            <section>
+
+                <table class="termekek">
+                    <t>
+                        <th>Név</th>
+                        <th>Kép</th>
+                        <th>Leírás</th>
+                        <th>Ár</th>
+                        <th></th>
+                        <th></th>
+                    </t>
+                    <tr class="termek">
+                        <td class="termeknev">Termék neve</td>
+                        <td class="kep">
+                            <img src=" " alt=" ">
+                        </td>
+                        <td class="leiras">leírás</td>
+                        <td class="ar">ár</td>
+                        <td class="torles"><button>Törlés</button></td>
+                        <td class="modosit"><button>Módosít</button></td>
+                    </tr>
+                </table>
+            </section>
+            <form>
+                <label for="szama">id:</label>
+                <input type="text" id="szama" name="szama" autofocus placeholder="szama" disabled><br>
+                <label for="nev">neve:</label>
+                <input type="text" id="nev" name="nev" autofocus placeholder="csodás tájkép" required><br>
+                <label for="kepe">kep:</label>
+                <input type="text" id="kepe" name="kepe" autofocus placeholder="képek.jpg"><br>
+                <label for="leirasa">leirás:</label>
+                <input type="text" id="leirasa" name="leirasa" autofocus placeholder="kicsi nyuszi hop hop az erdőben sétál egereket fogdos és fejbe vágja mind"><br>     
+                <label for="ara">ára:</label>
+                <input type="number" id="ara" name="ara" autofocus placeholder="20000"><br>
+                <input type="button" id="modositasa" value="modosítása">
+                <input type="button" id="ujAdat" value="uj adat hozzá adása">
+            </form>
+        </article>
+        <footer></footer>
+    </main>
+</body>
+
+</html>
