@@ -41,6 +41,7 @@ $(function() {
             leiras: $("#leirasa").val(),
             ar: $("#ara").val(),
         }
+        console.log(vegpont);
         console.log(ujAdat);
         myAjax.putAdat(vegpont,ujAdat,$("#szama").val());
 
